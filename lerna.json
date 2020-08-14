@@ -1,0 +1,30 @@
+{
+  "version": "independent",
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "private": true,
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "command": {
+    "version": {
+      "message": "chore(release): release %s",
+      "conventionalCommits": true,
+      "yes": true
+    },
+    "publish": {
+      "noPush": true,
+      "noGitTagVersion": true,
+      "graphType": "all",
+      "access": "restricted",
+      "verifyAccess": false,
+      "directory": "dist",
+      "registry": "https://registry.npmjs.org"
+    }
+  },
+  "ignoreChanges": [
+    "**/*.md",
+    "**/*.spec.ts"
+  ]
+}

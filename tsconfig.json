@@ -9,8 +9,6 @@
     "declaration": true,
     "importHelpers": true,
     "noImplicitAny": true,
-    "outDir": "./dist/",
-    "declarationDir": "./dist/",
     "strictNullChecks": true,
     "allowUnreachableCode": false,
     "experimentalDecorators": true,
@@ -21,12 +19,10 @@
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration" : true,
     "skipLibCheck": true,
-    "typeRoots": ["./node_modules/@types"]
-  },
-  "exclude": [
-    "./node_modules"
-	],
-	"include": [
-		"./src/**/*.ts"
-	]
+    "typeRoots": ["./node_modules/@types"],
+    "baseUrl": "./packages",
+    "paths": {
+      "@packages/*": ["packages/*"]
+    }
+  }
 }

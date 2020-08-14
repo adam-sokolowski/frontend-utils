@@ -1,11 +1,15 @@
 {
-  "name": "@adso/ts-skeleton",
-  "version": "1.0.3",
+  "name": "@adso-ts/frontend-utils",
+  "version": "1.0.0",
+  "private": true,
   "description": "Skeleton for typescript util libraries",
   "repository": {
     "type": "git",
-    "url": "git@github.com:adam-sokolowski/ts-skeleton.git"
+    "url": "git@github.com:adam-sokolowski/frontend-utils.git"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [
     "ts",
     "es6",
@@ -21,15 +25,19 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc --module commonjs",
-    "build:watch": "yarn build -w",
-    "source:test": "jest",
-    "source:test:watch": "jest --watchAll",
+    "lerna:build": "lerna run build",
+    "lerna:publish": "lerna publish",
+    "lerna:upgrade": "lerna exec yarn upgrade",
+    "lerna:version": "lerna version",
+    "package:clear": "rimraf packages/**/dist",
+    "package:rebuild": "yarn package:clear && yarn lerna:build",
+    
+    "package:githooks:reset": "rm -rf ./.git/hooks/* && rm -rf node_modules/husky && yarn install --check-files",
+
     "source:lint": "tsc --noEmit && eslint '*/**/*.ts' --quiet --fix",
-    "source:coverage-badges": "coverage-badges --save=badges",
-    "package:release:patch": "standard-version --release-as patch",
-    "package:release:minor": "standard-version --release-as minor",
-    "package:githooks:reset": "rm -rf ./.git/hooks/* && rm -rf node_modules/husky && yarn install --check-files"
+
+    "source:test": "jest",
+    "source:test:watch": "jest --watchAll"
   },
   "husky": {
     "hooks": {
@@ -56,6 +64,7 @@
     "typescript": "~3.9.0"
   },
   "dependencies": {
-    "@adso-ts/badges": "^1.1.3"
+    "@adso-ts/badges": "^1.1.3",
+    "lerna": "^3.22.1"
   }
 }
