@@ -1,7 +1,7 @@
 {
   "name": "@adso-ts/build-query-string",
-  "version": "1.0.0.rc-0",
-  "description": "Util for transforming an object and into an URL query parameters",
+  "version": "1.0.0-rc.0",
+  "description": "Transforms an object into an URL query parameters",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
