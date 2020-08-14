@@ -37,7 +37,8 @@
     "source:lint": "tsc --noEmit && eslint '*/**/*.ts' --quiet --fix",
 
     "source:test": "jest",
-    "source:test:watch": "jest --watchAll"
+    "source:test:watch": "jest --watchAll",
+    "source:coverage-badges": "coverage-badges --save=coverage-badges"
   },
   "husky": {
     "hooks": {
