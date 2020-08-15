@@ -9,7 +9,8 @@
     "!dist/**/*.spec.*"
   ],
   "scripts": {
-    "build": "tsc --module commonjs"
+    "build": "tsc --module commonjs",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "ts",
