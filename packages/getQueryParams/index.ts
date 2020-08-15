@@ -1,1 +1,1 @@
-export * from './src';
+export { getQueryParams } from './src/getQueryParams';

@@ -1,1 +1,0 @@
-export { getQueryParams } from './getQueryParams';

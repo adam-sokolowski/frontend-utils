@@ -2,7 +2,7 @@
   "name": "@adso-ts/frontend-utils",
   "version": "1.0.0",
   "private": true,
-  "description": "Skeleton for typescript util libraries",
+  "description": "Collection of front-end unil functions",
   "repository": {
     "type": "git",
     "url": "git@github.com:adam-sokolowski/frontend-utils.git"
@@ -32,9 +32,9 @@
     
     "package:githooks:reset": "rm -rf ./.git/hooks/* && rm -rf node_modules/husky && yarn install --check-files",
 
-    "source:lint": "tsc --noEmit && eslint '*/**/*.ts' --quiet --fix",
+    "source:lint": "eslint '*/**/*.ts' --quiet --fix",
 
-    "source:test": "jest",
+    "source:test": "jest --verbose",
     "source:test:watch": "jest --watchAll",
     "source:coverage-badges": "coverage-badges --save=coverage-badges"
   },

@@ -1,17 +1,26 @@
 import { isEmpty, keys } from 'lodash';
 
 /**
- * Concatenates params to generate a string usable in a URL.
- * @param { any[] } collection List of elements to convert to query params
- * @returns { string } String preceded by '?' and then the params separated by '&'
+ * Concatenates object's key:value pairs into a query params string
+ * @param { record } collection Object to convert
+ * @returns { string } Query param string
+ *
+ * @example
+ * const obj = {
+ *  from: 1,
+ *  to: 2,
+ *  user: 'test-user'
+ * }
+ *
+ * const queryString = buildQueryString(obj);  // result ?from=1&to=2&user=test-user
  */
-export function buildQueryString(collection: Record<string, unknown>): string {
+export function buildQueryString(collection: Record<string, string | number>): string {
   if (isEmpty(collection)) {
     return '';
   }
 
   const query = keys(collection)
-    .map(key => `${key}=${(collection as any)[key]}`)
+    .map(key => `${key}=${(collection)[key]}`)
     .join('&');
 
   return `?${query}`;

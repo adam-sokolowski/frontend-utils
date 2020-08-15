@@ -13,12 +13,11 @@
     "allowUnreachableCode": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "noImplicitReturns": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration" : true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "typeRoots": ["./node_modules/@types"],
     "baseUrl": "./packages",
     "paths": {
