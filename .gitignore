@@ -20,3 +20,4 @@ yarn-lock.json
 
 # dist
 dist
+**/*/yarn-error.log
