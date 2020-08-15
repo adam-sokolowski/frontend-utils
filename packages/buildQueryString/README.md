@@ -2,7 +2,7 @@
 
 ## Import
 ```ts
-import { buildQueryString } from '@adso-ts/build-query-string;
+import { buildQueryString } from '@adso-ts/build-query-string';
 ```
 
 ## How to use

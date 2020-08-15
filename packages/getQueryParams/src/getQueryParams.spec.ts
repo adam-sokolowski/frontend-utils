@@ -34,9 +34,5 @@ describe('Given getQueryParams function', () => {
         expect(getQueryParams(option as any)).toStrictEqual({});
       });
     })
-
-    
-
-
   });
 });
