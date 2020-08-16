@@ -1,0 +1,30 @@
+{
+  "name": "@adso-ts/map-keys-deep",
+  "version": "1.0.3",
+  "description": "Recursively modifies keys for objects",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/*",
+    "!dist/**/*.spec.*"
+  ],
+  "scripts": {
+    "build": "tsc --module commonjs"
+  },
+  "keywords": [
+    "ts",
+    "es6",
+    "text",
+    "util",
+    "object",
+    "keys",
+    "map keys",
+    "map keys deep"
+  ],
+  "author": "Adam Sokołowski <adam.sokolowski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "~4.14.159",
+    "lodash": "~4.17.20"
+  }
+}

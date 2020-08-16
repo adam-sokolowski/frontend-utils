@@ -7,3 +7,6 @@ URL:
 
 Text:
 - [sentenceCase](packages/sentenceCase/README.md)
+
+Object:
+- [mapKeysDeep](packages/mapKeysDeep/README.md)

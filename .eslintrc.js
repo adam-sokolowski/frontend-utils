@@ -25,5 +25,6 @@ module.exports = {
       "error",
       { "allowAllPropertiesOnSameLine": true }
     ],
+    "@typescript-eslint/no-explicit-any": "off"
   }
 };

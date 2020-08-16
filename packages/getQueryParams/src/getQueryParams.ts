@@ -4,7 +4,7 @@ import { map, split } from 'lodash';
  * Transforms URL's query params into an object
  * In absence of query params returns an empty object
  * @param {string} url with query params.
- * @returns object
+ * @returns Record
  * 
  * @example
  * {
