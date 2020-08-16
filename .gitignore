@@ -15,9 +15,8 @@ npm-debug.log
 # coverage
 coverage
 
-package-lock.json
-yarn-lock.json
-
 # dist
 dist
+
+# error log
 **/*/yarn-error.log

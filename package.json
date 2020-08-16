@@ -32,7 +32,7 @@
     
     "package:githooks:reset": "rm -rf ./.git/hooks/* && rm -rf node_modules/husky && yarn install --check-files",
 
-    "source:lint": "eslint '*/**/*.ts' --quiet --fix",
+    "source:lint": "eslint '*/**/*.ts' --fix",
 
     "source:test": "jest --verbose",
     "source:test:watch": "jest --watchAll",
