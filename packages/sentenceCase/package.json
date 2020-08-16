@@ -1,0 +1,29 @@
+{
+  "name": "@adso-ts/sentence-case",
+  "version": "1.0.0-rc.0",
+  "description": "Transforms a string into a `Sentence case` format",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/*",
+    "!dist/**/*.spec.*"
+  ],
+  "scripts": {
+    "build": "tsc --module commonjs",
+    "publish": "npm publish --access public"
+  },
+  "keywords": [
+    "ts",
+    "es6",
+    "text",
+    "util",
+    "string",
+    "sentence case"
+  ],
+  "author": "Adam Sokołowski <adam.sokolowski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "~4.14.159",
+    "lodash": "~4.17.20"
+  }
+}
