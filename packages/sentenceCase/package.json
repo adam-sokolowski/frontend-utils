@@ -1,16 +1,23 @@
 {
   "name": "@adso-ts/sentence-case",
   "version": "1.0.1",
-  "description": "Transforms a string into a `Sentence case` format",
+  "description": "Transforms any string into a `Sentence case` format",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-sokolowski/frontend-utils.git",
+    "directory": "packages/sentenceCase"
+  },
   "files": [
     "dist/*",
     "!dist/**/*.spec.*"
   ],
   "scripts": {
-    "build": "tsc --module commonjs",
-    "publish": "npm publish --access public"
+    "build": "tsc --module commonjs"
   },
   "keywords": [
     "ts",
@@ -18,7 +25,10 @@
     "text",
     "util",
     "string",
-    "sentence case"
+    "sentence case",
+    "sentence",
+    "text transform",
+    "transform"
   ],
   "author": "Adam Sokołowski <adam.sokolowski@gmail.com>",
   "license": "MIT",

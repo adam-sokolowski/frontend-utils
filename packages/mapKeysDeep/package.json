@@ -4,6 +4,14 @@
   "description": "Recursively modifies keys for objects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-sokolowski/frontend-utils.git",
+    "directory": "packages/mapKeysDeep"
+  },
   "files": [
     "dist/*",
     "!dist/**/*.spec.*"

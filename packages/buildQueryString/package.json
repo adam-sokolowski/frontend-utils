@@ -4,13 +4,20 @@
   "description": "Transforms an object into an URL query parameters",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-sokolowski/frontend-utils.git",
+    "directory": "packages/buildQueryString"
+  },
   "files": [
     "dist/*",
     "!dist/**/*.spec.*"
   ],
   "scripts": {
-    "build": "tsc --module commonjs",
-    "publish": "npm publish --access public"
+    "build": "tsc --module commonjs"
   },
   "keywords": [
     "ts",
