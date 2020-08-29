@@ -1,6 +1,6 @@
 {
   "name": "@adso-ts/get-query-params",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parses an url(string) and extracts query parameters",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
