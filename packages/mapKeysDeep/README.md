@@ -1,4 +1,5 @@
 # Map keys deep
+Performs deep map of object's keys
 
 ## Import
 ```ts

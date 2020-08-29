@@ -1,12 +1,6 @@
 # Sentence case
+Transforms a string
 
-## Import
-```ts
-import { sentenceCase } from '@adso-ts/sentence-case';
-```
-
-## How to use
-When given one of:
 - 'myString'
 - 'MyString'
 - 'my_string'
@@ -15,8 +9,14 @@ When given one of:
 - 'My string'
 - 'My String'
 
-as an input
+Into a Sentence case (capitalise first letter)
 
+## Import
+```ts
+import { sentenceCase } from '@adso-ts/sentence-case';
+```
+
+## How to use
 ```ts
 const sentenceCased = sentenceCase(string);  // result: My string
 ```

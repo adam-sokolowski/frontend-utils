@@ -1,4 +1,5 @@
 # Get query params
+Parses an url and transforms query params string into object.
 
 ## Import
 ```ts

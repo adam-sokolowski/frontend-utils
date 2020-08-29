@@ -1,4 +1,5 @@
 # Build query string
+Turns an objest into a query param string
 
 ## Import
 ```ts
