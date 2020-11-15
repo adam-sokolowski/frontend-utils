@@ -1,5 +1,5 @@
-import { isNumber, isString } from 'lodash';
 import { isColorValid, normalizeColor } from './isColorValid';
+import { isNumber, isString } from 'lodash';
 
 const normalizePercentage = (percentage: number | string) : number => 
   isNumber(percentage)
