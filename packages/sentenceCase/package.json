@@ -1,6 +1,6 @@
 {
   "name": "@adso-ts/sentence-case",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transforms any string into a `Sentence case` format",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

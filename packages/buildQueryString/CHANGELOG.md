@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/adam-sokolowski/frontend-utils/compare/@adso-ts/build-query-string@1.0.2...@adso-ts/build-query-string@1.0.3) (2020-11-15)
+
+
+### Bug Fixes
+
+* **all:** add index js files ([5a8bc29](https://github.com/adam-sokolowski/frontend-utils/commit/5a8bc2943b116ee37ba2fedd7074338e1dea41f0))
+
+
+
+
+
 ## [1.0.2](https://github.com/adam-sokolowski/frontend-utils/compare/@adso-ts/build-query-string@1.0.1...@adso-ts/build-query-string@1.0.2) (2020-08-29)
 
 **Note:** Version bump only for package @adso-ts/build-query-string
