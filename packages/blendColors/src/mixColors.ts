@@ -1,10 +1,14 @@
-import { isNumber } from 'lodash';
+import { isNumber, isString, startsWith } from 'lodash';
 import { isColorValid } from './isColorValid';
 
 const normalizePercentage = (percentage: number | string) : number => 
   isNumber(percentage)
     ? percentage
     : parseFloat(percentage.replace(/,/g, '.'));
+
+  const normalizeColor = (color: string) => startsWith(color, '#')
+    ? color.substring(1)
+    : color;
 
 const toRGB = (hex: string) => [
   parseInt(hex[0] + hex[1], 16),
@@ -13,30 +17,37 @@ const toRGB = (hex: string) => [
 ];
 
 const toHEX = (rgb: number) => {
-    var hex = Math.round(rgb).toString(16);
-    if (hex.length == 1)
-        hex = '0' + hex;
-    return hex;
+  const hex = Math.round(rgb).toString(16);
+  return hex.length === 1 ? `0${hex}` : hex;
 };
 
+const isPercentageValid = (percentage: string | number): boolean => !!percentage && (isString(percentage) || isNumber(percentage));
+
+/**
+ * Function for mixing hex colors
+ * Sass mix for javascript
+ * @param base hex color
+ * @param color hex color
+ * @param percentage amount of main colof in the mix
+ */
 export function mixColors(
   base: string,
   color: string,
-  percentage: string | number): string | number {
+  percentage: string | number): string | undefined {
+
+  if(!isColorValid(base) || !isColorValid(color) || (!isPercentageValid(percentage))) {
+    return;
+  }
 
   const percent = normalizePercentage(percentage) / 100;
 
-  if(!isColorValid(base) || !isColorValid(color) || !isNumber(percent)) {
-    return color;
-  }
-
-  const baseRGB = toRGB(base);
-  const colorRGB = toRGB(color);
+  const baseRGB = toRGB(normalizeColor(base));
+  const colorRGB = toRGB(normalizeColor(color));
 
   const rbg = [ 
-    (1 - percent) * baseRGB[0] + percent * colorRGB[0], 
-    (1 - percent) * baseRGB[1] + percent * colorRGB[1], 
-    (1 - percent) * baseRGB[2] + percent * colorRGB[2]
+    percent * baseRGB[0] + (1 - percent) * colorRGB[0], 
+    percent * baseRGB[1] + (1 - percent) * colorRGB[1], 
+    percent * baseRGB[2] + (1 - percent) * colorRGB[2]
   ];
 
   return '#' + toHEX(rbg[0]) + toHEX(rbg[1]) + toHEX(rbg[2]);

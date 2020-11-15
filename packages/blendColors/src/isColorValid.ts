@@ -1,4 +1,4 @@
-import { toLower, isString, stubString } from 'lodash';
+import { isString, stubString, toLower } from 'lodash';
 
 export function isColorValid(color: string): boolean {
   if(!color || !isString(color) || color.length < 6) {
