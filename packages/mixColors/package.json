@@ -1,5 +1,5 @@
 {
-  "name": "@adso-ts/blend-colors",
+  "name": "@adso-ts/mix-colors",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/adam-sokolowski/frontend-utils.git",
-    "directory": "packages/blendColors"
+    "directory": "packages/mixColors"
   },
   "files": [
     "dist/*",
@@ -25,9 +25,10 @@
     "util",
     "string",
     "color",
+    "hex",
     "sass functions",
     "colot transform",
-    "transform"
+    "sass mix"
   ],
   "author": "Adam Sokołowski <adam.sokolowski@gmail.com>",
   "license": "MIT",

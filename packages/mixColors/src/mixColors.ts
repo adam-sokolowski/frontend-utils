@@ -1,14 +1,11 @@
-import { isNumber, isString, startsWith } from 'lodash';
-import { isColorValid } from './isColorValid';
+import { isNumber, isString } from 'lodash';
+import { isColorValid, normalizeColor } from './isColorValid';
 
 const normalizePercentage = (percentage: number | string) : number => 
   isNumber(percentage)
     ? percentage
     : parseFloat(percentage.replace(/,/g, '.'));
 
-  const normalizeColor = (color: string) => startsWith(color, '#')
-    ? color.substring(1)
-    : color;
 
 const toRGB = (hex: string) => [
   parseInt(hex[0] + hex[1], 16),
@@ -29,6 +26,7 @@ const isPercentageValid = (percentage: string | number): boolean => !!percentage
  * @param base hex color
  * @param color hex color
  * @param percentage amount of main colof in the mix
+ * @returns string hex color
  */
 export function mixColors(
   base: string,

@@ -9,9 +9,8 @@ const mockedInvalidInputs = {
   emptyString: '',
   object: {},
   array: [],
-  a: 'fff',
-  b: 'f',
-  c: '0000',
+  a: 'f',
+  b: '0000',
 };
 
 const mockedValidInputs = {
@@ -19,6 +18,8 @@ const mockedValidInputs = {
   b: '#ffffff',
   c: '000000',
   d: '#000000',
+  e: '060',
+  f: '#060',
 };
 
 describe('Given isColorValid function', () => {
