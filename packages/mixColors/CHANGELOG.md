@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/adam-sokolowski/frontend-utils/compare/@adso-ts/mix-colors@1.1.1...@adso-ts/mix-colors@1.2.0) (2020-11-22)
+
+
+### Features
+
+* **micColors:** optimizes code, rearranges utils functions ([d7ea2f4](https://github.com/adam-sokolowski/frontend-utils/commit/d7ea2f417494e8f281cbef8f685e65e6d24c5824))
+
+
+
+
+
 ## [1.1.1](https://github.com/adam-sokolowski/frontend-utils/compare/@adso-ts/mix-colors@1.1.0...@adso-ts/mix-colors@1.1.1) (2020-11-15)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/adam-sokolowski/frontend-utils/compare/@adso-ts/build-query-string@1.0.3...@adso-ts/build-query-string@1.0.4) (2020-11-22)
+
+**Note:** Version bump only for package @adso-ts/build-query-string
+
+
+
+
+
 ## [1.0.3](https://github.com/adam-sokolowski/frontend-utils/compare/@adso-ts/build-query-string@1.0.2...@adso-ts/build-query-string@1.0.3) (2020-11-15)
 
 

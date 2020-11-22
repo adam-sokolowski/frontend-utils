@@ -1,6 +1,6 @@
 {
   "name": "@adso-ts/map-keys-deep",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Recursively modifies keys for objects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
