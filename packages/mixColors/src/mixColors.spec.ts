@@ -1,5 +1,5 @@
 import each from 'lodash/each';
-import { mixColors } from './mixColors';
+import { mixColors, shade, tint } from './mixColors';
 
 const mockedInvalidInputs = {
   undefined: undefined,
@@ -50,6 +50,7 @@ describe('Given mixColors function', () => {
       each(lightVariants, (variant, variantName) => {
         it(`Then it should return ${variant}% tinted variant of ${color.main}`, () => {
           expect(mixColors('ffffff',color.main, variant)).toBe((color as any)[variantName]);
+          expect(tint(color.main, variant)).toBe((color as any)[variantName]);
         });
       });
     })
@@ -58,6 +59,7 @@ describe('Given mixColors function', () => {
       each(darkVariants, (variant, variantName) => {
         it(`Then it should return ${variant}% shaded variant of ${color.main}`, () => {
           expect(mixColors('000000',color.main, variant)).toBe((color as any)[variantName]);
+          expect(shade(color.main, variant)).toBe((color as any)[variantName]);
         });
       });
     })
