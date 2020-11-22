@@ -1,6 +1,10 @@
-import {
- camelCase, isNaN, isString, parseInt, startCase, toLower, upperFirst 
-} from 'lodash';
+import camelCase from 'lodash/camelCase';
+import isNaN from 'lodash/isNaN';
+import isString from 'lodash/isString';
+import parseInt from 'lodash/parseInt';
+import startCase from 'lodash/startCase';
+import toLower from 'lodash/toLower';
+import upperFirst from 'lodash/upperFirst';
 
 /**
  * Transforms a string into a `Sentence case` - capitalizes first letter of the string.

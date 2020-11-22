@@ -1,4 +1,5 @@
-import { isEmpty, keys } from 'lodash';
+import keys from 'lodash/keys';
+import isEmpty from 'lodash/isEmpty';
 
 /**
  * Concatenates object's key:value pairs into a query params string

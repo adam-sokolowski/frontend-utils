@@ -1,6 +1,10 @@
-import {
- isArray, isPlainObject, map, mapKeys, mapValues 
-} from 'lodash';
+
+ import isArray from 'lodash/isArray';
+ import isPlainObject from 'lodash/isPlainObject';
+ import map from 'lodash/map';
+ import mapKeys from 'lodash/mapKeys';
+ import mapValues  from 'lodash/mapValues';
+ 
 import { FunctionType } from './mapKeysDeep.model';
 
 /**

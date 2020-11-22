@@ -1,4 +1,4 @@
-import { each } from 'lodash';
+import each from 'lodash/each';
 import { sentenceCase } from './sentenceCase';
 
 const mockedInvalidInputs = {

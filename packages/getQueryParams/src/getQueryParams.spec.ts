@@ -1,4 +1,4 @@
-import { each } from 'lodash';
+import each from 'lodash/each';
 import { getQueryParams } from './getQueryParams';
 const mockedParamsUrl = 'terms-and-conditions?uuid=2980d03e-4a87-48d3-a161-e3d19caa3be2&language=en&company=33c1b18f-2841-494c-b346-22f688c34b6e&from=default&uuids=["a82fc9e6-0df3", "431b-92ff-050f6fa53b07"]';
 
