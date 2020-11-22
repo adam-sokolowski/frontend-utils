@@ -3,7 +3,7 @@ Javascript clone of sass `mix` function.
 
 ## Import
 ```ts
-import { mixColors, isColorValid, normalizeColor } from '@adso-ts/mix-colors';
+import { mixColors, shade, tint, isColorValid, normalizeColor } from '@adso-ts/mix-colors';
 ```
 
 ## How to use
@@ -13,6 +13,13 @@ const color = '#0099cb';      // alternative format: '0099cb'
 const percentage = 20         // valid formats: '20%', 20.0, '20,0'
 
 const shade = mixColors(baseColor, color, percentage); 
+const shade = shade(color, percentage);
+
+const shade = mixColors(baseColor, color, percentage); 
+const shade = shade(color, percentage);
+
+const shade = mixColors('#fff', color, percentage); 
+const shade = tint(color, percentage);
 ```
 
 sass equivalent 
