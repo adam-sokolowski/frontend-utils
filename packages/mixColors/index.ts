@@ -1,2 +1,2 @@
 export { mixColors } from './src/mixColors';
-export { isColorValid, normalizeColor } from './src/isColorValid';
+export { toHEX, toRGB, isColorValid, normalizeColor } from './src/utils/utils';

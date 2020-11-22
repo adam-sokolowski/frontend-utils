@@ -18,6 +18,7 @@
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration" : true,
     "skipLibCheck": false,
+    "esModuleInterop": true,
     "typeRoots": ["./node_modules/@types"],
     "baseUrl": "./packages",
     "paths": {

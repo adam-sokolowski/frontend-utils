@@ -1,24 +1,11 @@
-import { isColorValid, normalizeColor } from './isColorValid';
-import { isNumber, isString } from 'lodash';
-
-const normalizePercentage = (percentage: number | string) : number => 
-  isNumber(percentage)
-    ? percentage
-    : parseFloat(percentage.replace(/,/g, '.'));
-
-
-const toRGB = (hex: string) => [
-  parseInt(hex[0] + hex[1], 16),
-  parseInt(hex[2] + hex[3], 16),
-  parseInt(hex[4] + hex[5], 16)
-];
-
-const toHEX = (rgb: number) => {
-  const hex = Math.round(rgb).toString(16);
-  return hex.length === 1 ? `0${hex}` : hex;
-};
-
-const isPercentageValid = (percentage: string | number): boolean => !!percentage && (isString(percentage) || isNumber(percentage));
+import {
+  toHEX,
+  toRGB,
+  normalizePercentage,
+  normalizeColor,
+  isPercentageValid,
+  isColorValid
+} from './utils/utils';
 
 /**
  * Function for mixing hex colors

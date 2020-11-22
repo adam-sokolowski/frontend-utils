@@ -1,5 +1,5 @@
-import { each } from 'lodash';
-import { isColorValid } from './isColorValid';
+import each from 'lodash/each';
+import { isColorValid } from './utils';
 
 const mockedInvalidInputs = {
   undefined: undefined,

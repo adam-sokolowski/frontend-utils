@@ -1,6 +1,27 @@
-import { isString, startsWith, toLower } from 'lodash';
+import isNumber from 'lodash/isNumber';
+import isString  from 'lodash/isString';
+import startsWith  from 'lodash/startsWith';
+import toLower  from 'lodash/toLower';
 
 const colorRegex = /^#?([0-9a-f]{3}|[0-9a-f]{6})$/i;
+
+export const toRGB = (hex: string) => [
+  parseInt(hex[0] + hex[1], 16),
+  parseInt(hex[2] + hex[3], 16),
+  parseInt(hex[4] + hex[5], 16)
+];
+
+export const toHEX = (rgb: number) => {
+  const hex = Math.round(rgb).toString(16);
+  return hex.length === 1 ? `0${hex}` : hex;
+};
+
+export const normalizePercentage = (percentage: number | string) : number => 
+  isNumber(percentage)
+    ? percentage
+    : parseFloat(percentage.replace(/,/g, '.'));
+
+export  const isPercentageValid = (percentage: string | number): boolean => !!percentage && (isString(percentage) || isNumber(percentage));
 
 /**
  * Normalizes hex color notation
