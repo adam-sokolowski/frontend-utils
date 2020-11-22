@@ -1,5 +1,5 @@
-import each from 'lodash/each';
 import { mixColors, shade, tint } from './mixColors';
+import each from 'lodash/each';
 
 const mockedInvalidInputs = {
   undefined: undefined,
