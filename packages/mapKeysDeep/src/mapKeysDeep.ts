@@ -1,11 +1,10 @@
-
- import isArray from 'lodash/isArray';
- import isPlainObject from 'lodash/isPlainObject';
- import map from 'lodash/map';
- import mapKeys from 'lodash/mapKeys';
- import mapValues  from 'lodash/mapValues';
- 
 import { FunctionType } from './mapKeysDeep.model';
+
+import isArray from 'lodash/isArray';
+import isPlainObject from 'lodash/isPlainObject';
+import map from 'lodash/map';
+import mapKeys from 'lodash/mapKeys';
+import mapValues  from 'lodash/mapValues';
 
 /**
 * Performs recursive object's key modification

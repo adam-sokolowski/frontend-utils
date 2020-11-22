@@ -1,10 +1,10 @@
 import {
-  toHEX,
-  toRGB,
-  normalizePercentage,
-  normalizeColor,
+  isColorValid,
   isPercentageValid,
-  isColorValid
+  normalizeColor,
+  normalizePercentage,
+  toHEX,
+  toRGB
 } from './utils/utils';
 
 /**
@@ -37,3 +37,15 @@ export function mixColors(
 
   return '#' + toHEX(rbg[0]) + toHEX(rbg[1]) + toHEX(rbg[2]);
 }
+
+export function shade(
+  color: string,
+  percentage: string | number): string | undefined {
+    return mixColors('000', color, percentage);
+  }
+
+export function tint(
+  color: string,
+  percentage: string | number): string | undefined {
+    return mixColors('fff', color, percentage);
+  }

@@ -1,5 +1,5 @@
-import keys from 'lodash/keys';
 import isEmpty from 'lodash/isEmpty';
+import keys from 'lodash/keys';
 
 /**
  * Concatenates object's key:value pairs into a query params string

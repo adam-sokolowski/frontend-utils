@@ -1,6 +1,7 @@
 import camelCase from 'lodash/camelCase';
-import snakeCase  from 'lodash/snakeCase';
 import { mapKeysDeep } from './mapKeysDeep';
+import snakeCase  from 'lodash/snakeCase';
+
 
 const mockedFlatCollection = {
   vehicle: 'vehicle',
