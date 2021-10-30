@@ -1,16 +1,15 @@
 {
-  "name": "@adso-ts/sentence-case",
-  "version": "1.0.4",
-  "description": "Transforms any string into a `Sentence case` format",
+  "name": "@adso-ts/attributes-list",
+  "version": "1.0.0",
+  "description": "Webpack loader for listing custom `data-` attributes in `vue` files",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/adam-sokolowski/frontend-utils.git",
-    "directory": "packages/sentenceCase"
+    "directory": "packages/attributesList"
   },
   "files": [
     "dist/*",
@@ -20,20 +19,16 @@
     "build": "tsc --module commonjs"
   },
   "keywords": [
-    "ts",
+    "js",
     "es6",
-    "text",
     "util",
     "string",
-    "sentence case",
-    "sentence",
-    "text transform",
-    "transform"
+    "webpack",
+    "loader",
+    "webpack loader",
+    "attributes",
+    "custom attributes"
   ],
   "author": "Adam Sokołowski <adam.sokolowski@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@types/lodash": "~4.14.159",
-    "lodash": "~4.17.20"
-  }
+  "license": "MIT"
 }
