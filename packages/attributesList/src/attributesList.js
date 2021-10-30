@@ -23,9 +23,9 @@ const getAttribute = (componentTemplate, attr) => {
 }
 
 module.exports = function getAttributesList(content) {
-    const options = utils.getOptions(this);
+    const options = utils && utils.getOptions(this);
     const customAttributeString = options && options.attribute || 'data-test-id';
-
+    
     const namePattern = options && options.name || '[path][name].[ext]';
     const fileUrl = utils.interpolateName(this, namePattern, { content });
     const fileName = last(fileUrl.split('/'));
@@ -35,7 +35,7 @@ module.exports = function getAttributesList(content) {
 
     if(!list.length) {
         console.error(`No ${customAttributeString} found in the file ${fileName}`);
-        return '';
+        return [];
     } else {
         console.group();
         console.info('-----------------');
@@ -45,5 +45,5 @@ module.exports = function getAttributesList(content) {
     }
 
     list.length = 0;
-    return '';
+    return list;
 };

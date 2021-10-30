@@ -14,7 +14,7 @@ export default (fixture, options = {}) => {
     module: {
       rules: [
         {
-          test: /\.vue$/,
+          test: /\.txt$/,
           use: {
             loader: path.resolve(__dirname, './attributesList.js'),
             options,
