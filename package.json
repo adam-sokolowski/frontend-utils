@@ -29,11 +29,8 @@
     "lerna:version": "lerna version",
     "package:clear": "rimraf packages/**/dist",
     "package:rebuild": "yarn package:clear && yarn lerna:build",
-    
     "package:githooks:reset": "rm -rf ./.git/hooks/* && rm -rf node_modules/husky && yarn install --check-files",
-
     "source:lint": "eslint '*/**/*.ts' --fix",
-
     "source:test": "jest --verbose",
     "source:test:watch": "jest --watchAll",
     "source:coverage-badges": "coverage-badges --save=coverage-badges"
@@ -51,18 +48,23 @@
   "author": "Adam Sokołowski <adam.sokolowski@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
     "@types/jest": "~26.0.10",
     "@typescript-eslint/eslint-plugin": "~4.7.0",
     "@typescript-eslint/parser": "~4.7.0",
     "eslint": "~7.13.0",
     "husky": "~4.2.5",
     "jest": "~26.4.0",
+    "memfs": "^3.3.0",
     "ts-jest": "~26.3.0",
-    "tslib": "~2.0.0",
-    "typescript": "~4.0.0"
+    "tslib": "~2.3.0",
+    "typescript": "~4.4.0",
+    "webpack": "^5.61.0"
   },
   "dependencies": {
     "@adso-ts/badges": "^1.1.4",
-    "lerna": "^3.22.1"
+    "lerna": "^4.0.0"
   }
 }

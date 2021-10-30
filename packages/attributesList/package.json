@@ -2,7 +2,7 @@
   "name": "@adso-ts/attributes-list",
   "version": "1.0.0",
   "description": "Webpack loader for listing custom `data-` attributes in `vue` files",
-  "main": "dist/index.js",
+  "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -12,11 +12,14 @@
     "directory": "packages/attributesList"
   },
   "files": [
-    "dist/*",
-    "!dist/**/*.spec.*"
+    "!src/**/*.spec.*"
   ],
   "scripts": {
-    "build": "tsc --module commonjs"
+    "source:test": "jest --verbose"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
   },
   "keywords": [
     "js",
